@@ -16,9 +16,9 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HF }}
-        run: git remote add space https://dachasa:$HF@huggingface.co/spaces/dachasa/huggin-face-demo
+        run: git remote add space https://dachasa:$HF@huggingface.co/spaces/dachasa/demo
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://dachasa:$HF@huggingface.co/spaces/dachasa/huggin-face-demo main
+        run: git push --force https://dachasa:$HF@huggingface.co/spaces/dachasa/demo main
         
